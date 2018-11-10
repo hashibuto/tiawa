@@ -15,7 +15,9 @@
     "error",
     "stack",
     "trace",
-    "async"
+    "async",
+    "node.js",
+    "full stack trace"
   ],
   "author": "CowMan",
   "license": "ISC",

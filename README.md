@@ -16,7 +16,7 @@ const tiawa = require('tiawa')
 ## Usage
 
 ```js
-await someAsyncMethod(x, y z).catch(e => tiawa(e));
+await someAsyncMethod(x, y, z).catch(e => tiawa(e));
 ```
 
 tiawa will throw a new error and augment the existing stack trace with the current position in the call stack.  no overhead, dead simple.  fine for production use.

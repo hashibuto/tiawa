@@ -1,0 +1,26 @@
+{
+  "name": "tiawa",
+  "version": "1.0.0",
+  "description": "Preserve the full stack trace on error when using async methods",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ushimado/tiawa.git"
+  },
+  "keywords": [
+    "await",
+    "error",
+    "stack",
+    "trace",
+    "async"
+  ],
+  "author": "CowMan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ushimado/tiawa/issues"
+  },
+  "homepage": "https://github.com/ushimado/tiawa#readme"
+}

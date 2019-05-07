@@ -1,6 +1,6 @@
 {
   "name": "tiawa",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Preserve the full stack trace on error when using async methods",
   "main": "./src/index.js",
   "scripts": {

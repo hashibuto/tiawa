@@ -19,6 +19,23 @@ const tiawa = require('tiawa')
 
 ## Usage
 
+Tiawa can be used in two ways, first, to grab the response/error so that it can be processed in the current call stack:
+
+```js
+  const result = await tiawa(
+    myAsyncMethod(x, y, z)
+  );
+
+  if (result.error !== null) {
+    // Either handle error, or re-throw
+    throw result.error;
+  }
+
+  console.log(result.result);
+```
+
+Or alternatively, to round up the full stack trace, and re-throw:
+
 ```js
 await someAsyncMethod(x, y, z).catch(e => tiawa(e));
 ```

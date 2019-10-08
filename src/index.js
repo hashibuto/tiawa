@@ -12,7 +12,7 @@ const SKIP_KEYS = new Set([
 
 module.exports = (e) => {
   // Cheap promise/async detection
-  if (e.hasOwnProperty('then')) {
+  if (e.then !== undefined) {
     return e
     .then(result => new ResultObject(result, null))
     .catch(error => new ResultObject(null, error))
